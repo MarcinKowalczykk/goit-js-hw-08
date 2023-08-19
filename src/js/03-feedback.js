@@ -39,8 +39,4 @@ form.addEventListener('submit', event => {
   messageInput.value = '';
   localStorage.removeItem('feedback-form-state');
 
-  console.log('Form data submitted:', {
-    email: emailInput.value,
-    message: messageInput.value,
-  });
 });
