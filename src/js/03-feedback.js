@@ -29,14 +29,13 @@ form.addEventListener(
   'input',
   throttle(() => {
     saveFormState();
-  },500 )
+  }, 500)
 );
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-
+  console.log({ email: emailInput.value, message: messageInput.value });
   emailInput.value = '';
   messageInput.value = '';
   localStorage.removeItem('feedback-form-state');
-
 });

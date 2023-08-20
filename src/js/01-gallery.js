@@ -1,6 +1,6 @@
-// Opisany w dokumentacji
+
 import SimpleLightbox from "simplelightbox";
-// Dodatkowy import stylów
+
 import "simplelightbox/dist/simple-lightbox.min.css";
 // Add imports above this line
 import { galleryItems } from './gallery-items';
@@ -32,6 +32,6 @@ var lightbox = new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionDelay: 250,
 });
-console.log(galleryItems);
+
 
 
